@@ -1,4 +1,7 @@
-﻿img {
+﻿body {
+	padding-top: 70px;
+}
+img {
     max-width: 200px;
 }
 
