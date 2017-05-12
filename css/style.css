@@ -109,6 +109,33 @@ header .navbar-default .navbar-toggle .icon-bar {
 	border-top: 20px solid rgba(238, 200, 86, 0.5);
 }
 
+
+/** Page -- Services **/
+.service {
+	margin: 20px 0;
+	text-align: center;
+}
+
+#services img.icon {
+	display: block;			/* display:block to control width and height */
+	width: 80px;
+	margin: 0 auto;			/* to center if you use diplasy:block */
+	margin-bottom: 50px;
+}
+
+#services h3 {
+	margin-bottom: 10px;
+}
+
+@media only screen 
+and (min-width: 450px)
+and (max-width: 768px) {
+	.service p {
+		padding: 0 20%;
+	}
+}
+
+
 /** Footer Navigation **/
 footer .navbar-default {
 	background: transparent;
