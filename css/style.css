@@ -26,3 +26,12 @@ img {
 footer .navbar-default {
 	background: transparent;
 }
+
+.page {
+	padding: 50px 0;
+}
+
+.page h2 {
+	text-align: center;
+	margin-bottom:30px;
+}
