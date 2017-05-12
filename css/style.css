@@ -139,4 +139,5 @@ and (max-width: 768px) {
 /** Footer Navigation **/
 footer .navbar-default {
 	background: transparent;
+	border: none;
 }
