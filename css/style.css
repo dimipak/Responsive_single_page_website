@@ -75,6 +75,20 @@ header .navbar-brand span.subhead {
 }
 
 
+/** Navbar Toggle **/
+header .navbar-toggle {
+	background-color: #279182;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+header .navbar-collapse {
+	background-color: rgba(0,0,0, .5);	/* 0,0,0 is black color and 0.5 is transparecy half way */
+}
+
+
 /** Footer Navigation **/
 footer .navbar-default {
 	background: transparent;
