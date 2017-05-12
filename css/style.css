@@ -50,6 +50,31 @@ header .navbar-default .navbar-nav .active a:hover {
 	text-shadow: none;
 }
 
+
+/** Navbar Brand **/
+header .navbar-brand {
+	background: url(../images/wisdompetlogo.svg);
+	background-repeat: no-repeat;	/* by default background image is set to repeat */
+	background-position: 15px 0;
+	height: auto;
+}
+
+header .navbar-brand h1 {
+	color: white;
+	margin: 0;
+	font-size: 1.8em;
+	font-weight: 400;
+	padding-left: 105px;
+}
+
+header .navbar-brand span.subhead {
+	display: block;
+	font-family: "Roboto Slab", serif;
+	font-size: 0.6em;
+	font-weight: 100;
+}
+
+
 /** Footer Navigation **/
 footer .navbar-default {
 	background: transparent;
