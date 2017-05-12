@@ -91,11 +91,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 
-/** Footer Navigation **/
-footer .navbar-default {
-	background: transparent;
-}
-
+/** Page **/
 .page {
 	padding: 50px 0;
 }
@@ -103,4 +99,17 @@ footer .navbar-default {
 .page h2 {
 	text-align: center;
 	margin-bottom:30px;
+}
+
+
+/** Page -- Mission **/
+#mission {
+	background-color: #E4D29D;
+	background-image: linear-gradient(to bottom, #EEF08A, #819A2D);
+	border-top: 20px solid rgba(238, 200, 86, 0.5);
+}
+
+/** Footer Navigation **/
+footer .navbar-default {
+	background: transparent;
 }
