@@ -3,6 +3,26 @@
 	
 	var topoffset = 50; // variable for menu height
 	var slideqty = $('#featured .item').length;		//(carousel) finds the amount of .item classes
+	var wheight = $(window).height(); 				//(carousel) get the height of the window
+	
+	
+	$('.fullheight').css('height', wheight); 		// (carousel) set to window height
+	
+	// (carousel)
+	// we find each image source attribute and make their parent(div) have this image as a background
+	// and then we remove the source attribute from the image so we have only the background being displayed
+	$('#featured .item img').each(function() {
+		var imgSrc = $(this).attr('src');
+		$(this).parent().css({'background-image': 'url(' + imgSrc + ')'});
+		$(this).remove();
+	});
+	
+	// (carousel)
+	// adjust height of .fullheight elements on window resize
+	$(window).resize(function() {
+		wheight = $(window).height();
+		$('.fullheight').css('height', wheight);
+	});
 	
 	//Activate Scrollspy
 	$('body').scrollspy({
@@ -11,6 +31,7 @@
 	});
 	
 	
+	// (navbar inbody)
 	// finds and store the attribute of the anchor tag of the active class inside a li tag, in 'this' document
 	var hash = $(this).find('li.active a').attr('href');
 		
@@ -20,7 +41,7 @@
 		$('header nav').removeClass('inbody');
 	}
 	
-	
+	// (navbar inbody)
 	// Adds inbody class to nav when scrollspy event fires
 	$('.navbar-fixed-top').on('activate.bs.scrollspy', function() {
 		
