@@ -5,6 +5,9 @@
 	var slideqty = $('#featured .item').length;		//(carousel) finds the amount of .item classes
 	var wheight = $(window).height(); 				//(carousel) get the height of the window
 	
+	var randSlide = Math.floor(Math.random()*slideqty);
+	
+	$('#featured .item').eq(randSlide).addClass('active');
 	
 	$('.fullheight').css('height', wheight); 		// (carousel) set to window height
 	
@@ -74,7 +77,11 @@
 	
 	//Automatically generate carousel indicators
 	for (var i=0; i<slideqty; i++) {
-		var insertText = '<li data-target="#featured" data-slide-to="' + i + '"></li>';
+		var insertText = '<li data-target="#featured" data-slide-to="' + i + '"';
+		if (i === randSlide) {
+			insertText += ' class="active" ';
+		}
+		insertText += '></li>';
 		$('#featured ol').append(insertText);
 	}
 	

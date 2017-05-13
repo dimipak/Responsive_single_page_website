@@ -139,7 +139,7 @@ header .inbody .navbar-brand span.subhead {
 	/* except for the first one */
 .carousel.fade .item:first-child {
 	top: auto;
-	opacity: 1;
+	opacity: 0;
 	position: relative;
 }
 	/* we making each time an item has the .active class make it visible */
