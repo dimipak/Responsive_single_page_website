@@ -121,6 +121,43 @@ header .inbody .navbar-brand span.subhead {
 }
 
 
+/** Carousel Fade **/
+.carousel.fade {
+	opacity: 1;
+}
+
+	/* makes the opacity for all the item <img> to 0 */
+.carousel.fade .item {
+	transition: opacity ease-out .7s;
+	left:0;
+	opacity:0;
+	top:0;
+	position: absolute;
+	width: 100%;
+	display:block;
+}
+	/* except for the first one */
+.carousel.fade .item:first-child {
+	top: auto;
+	opacity: 1;
+	position: relative;
+}
+	/* we making each time an item has the .active class make it visible */
+.carousel.fade .item.active {
+	opacity: 1;
+}
+
+	/* hides the arrows in carousel, it shows them only if we rollover */
+.carousel-control {
+	opacity: 0;
+}
+
+.carouse-control.right, .carousel0control.left {
+	background-image: none;
+}
+
+
+
 /** Page **/
 .page {
 	padding: 50px 0;
