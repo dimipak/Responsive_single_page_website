@@ -2,6 +2,7 @@
 	//"use strict";
 	
 	var topoffset = 50; // variable for menu height
+	var slideqty = $('#featured .item').length;		//(carousel) finds the amount of .item classes
 	
 	//Activate Scrollspy
 	$('body').scrollspy({
@@ -50,6 +51,11 @@
     }); //smooth scrolling
 	
 	
+	//Automatically generate carousel indicators
+	for (var i=0; i<slideqty; i++) {
+		var insertText = '<li data-target="#featured" data-slide-to="' + i + '"></li>';
+		$('#featured ol').append(insertText);
+	}
 	
 	
 	$('.carousel').carousel({		//$('#featured'). would work as well
