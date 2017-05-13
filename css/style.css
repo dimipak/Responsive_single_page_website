@@ -269,22 +269,22 @@ and (max-width: 768px) {
 }
 
 #testimonials #janeh {
-	background: url(../images/testimonial-janeh.jpg) no-repeate center center;
+	background: url(../images/testimonial-janeh.jpg) no-repeat center center;
 	background-size: cover;
 }
 
 #testimonials #mcphersons {
-	background: url(../images/testimonial-mcphersons.jpg) no-repeate center center;
+	background: url(../images/testimonial-mcphersons.jpg) no-repeat center center;
 	background-size: cover;
 }
 
 #testimonials #johnb {
-	background: url(../images/testimonial-johnb.jpg) no-repeate center center;
+	background: url(../images/testimonial-johnb.jpg) no-repeat center center;
 	background-size: cover;
 }
 
 #testimonials #lorraines {
-	background: url(../images/testimonial-lorraines.jpg) no-repeate center center;
+	background: url(../images/testimonial-lorraines.jpg) no-repeat center center;
 	background-size: cover;
 }
 

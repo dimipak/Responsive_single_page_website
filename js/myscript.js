@@ -87,7 +87,7 @@
 	
 	
 	$('.carousel').carousel({		//$('#featured'). would work as well
-	  interval: false
+	  pause: false		//makes the carousel not to pause when the mouse is over the slide
 	});
 
 
