@@ -365,3 +365,30 @@ footer .navbar-nav>li a {
 	text-decoration: underline;
 	color: #EEC856 !important;
 }
+
+/** Loader for the page **/
+.loading {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10000;
+	background-color: #F3F3F3;
+	display: block;
+}
+
+.load {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	top: 4%;
+	left: 49%;
+	border: 7px solid #EEF08A;
+	border-top: 7px solid #819A2D;
+	border-radius: 50%;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% {transform: rotate(360deg);}
+}

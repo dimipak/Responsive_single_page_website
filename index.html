@@ -12,6 +12,13 @@
 
 <body> <!-- <body data-spy="scroll" data-target=".navbar-fixed-top">  This is the bootstrap way to enable scrollspy, just this -->
 <header>
+	<script type="text/javascript">
+		window.onload = function() {
+			document.getElementById('loading').style.display = "none";
+		}
+	</script>
+
+	<div id="loading" class="loading"><div class="load"></div></div>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
