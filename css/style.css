@@ -392,3 +392,27 @@ footer .navbar-nav>li a {
 	0% { transform: rotate(0deg); }
 	100% {transform: rotate(360deg);}
 }
+
+
+/** Back to top button **/
+.return {
+	width:50px;
+	height: 40px;
+	background-color: #EEC856;
+	position: fixed;
+	top: 90%;
+	left: 80%;
+	z-index: 999;
+	cursor: pointer;
+	display: none;
+	border:none;
+	outline:none;
+	border-radius: 10px;
+	color:white;
+	font-weight:500;
+}
+
+.return:hover {
+	color:#E15D5F;
+}
+

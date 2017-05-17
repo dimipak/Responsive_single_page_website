@@ -37,24 +37,29 @@
 	// (navbar inbody)
 	// finds and store the attribute of the anchor tag of the active class inside a li tag, in 'this' document
 	var hash = $(this).find('li.active a').attr('href');
-		
+	
+	
 	if(hash !== '#featured') {
 		$('header nav').addClass('inbody');
+		$('.return').fadeIn(500);			// this is for the back to top button
 	} else {
 		$('header nav').removeClass('inbody');
+		$('.return').fadeOut(500);
 	}
 	
 	// (navbar inbody)
 	// Adds inbody class to nav when scrollspy event fires
 	$('.navbar-fixed-top').on('activate.bs.scrollspy', function() {
-		
+
 		// finds and store the attribute of the anchor tag of the active class inside a li tag, in 'this' document
 		var hash = $(this).find('li.active a').attr('href');
 		
 		if(hash !== '#featured') {
 			$('header nav').addClass('inbody');
+			$('.return').fadeIn(500);
 		} else {
 			$('header nav').removeClass('inbody');
+			$('.return').fadeOut(500);
 		}
 		
 	});
@@ -72,6 +77,16 @@
                 return false;
             } //target.length
         } //click function
+    }); //smooth scrolling
+	
+	
+	
+	//Smooth scrolling fot the back to top button
+	$('a .return').click(function() {
+        var target = $('#featured');
+        $('html,body').animate({
+						scrollTop: target.offset().top
+						}, 500);
     }); //smooth scrolling
 	
 	
